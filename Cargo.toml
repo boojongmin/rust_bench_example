@@ -1,0 +1,36 @@
+[package]
+name = "rust-bench-example"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+
+[dev-dependencies]
+criterion = "0.5.1"
+#criterion = {  version="0.5.1", features = ["default", "html_reports", "csv_output"]}
+
+[[bench]]
+name = "fibonacci"
+harness = false
+
+[[bench]]
+name = "compare_fibonacci"
+harness = false
+
+[[bench]]
+name = "for"
+harness = false
+
+[[bench]]
+name = "stack_vs_heap_invalid"
+harness = false
+
+[[bench]]
+name = "stack_vs_heap_blackbox"
+harness = false
+
+[[bench]]
+name = "stack_vs_heap_custom_criterion"
+harness = false
