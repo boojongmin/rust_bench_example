@@ -20,10 +20,6 @@ name = "compare_fibonacci"
 harness = false
 
 [[bench]]
-name = "for"
-harness = false
-
-[[bench]]
 name = "stack_vs_heap_invalid"
 harness = false
 

@@ -1,5 +1,4 @@
 use criterion::{black_box, criterion_group, criterion_main, Criterion};
-use opool::Pool;
 
 fn stack() {
     for i in 0..10_000_000 {
